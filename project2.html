@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock Paper Scissors Ultimate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Rock Paper Scissors</h1>
+
+<div class="top-controls">
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <button id="timer-toggle">⏳ Timer Mode</button>
+</div>
+
+<div class="choices">
+    <div class="choice" id="rock"><img src="./images/stone.png"></div>
+    <div class="choice" id="paper"><img src="./images/paper.png"></div>
+    <div class="choice" id="scissor"><img src="./images/scissor.png"></div>
+</div>
+
+<h2 id="comp-choice">Computer chose: -</h2>
+<h3 id="timer">Time: 10</h3>
+
+<div class="score-board">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+    </div>
+    <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+    </div>
+</div>
+
+<div class="msg-container">
+    <p id="msg">Play your move</p>
+</div>
+
+<button id="reset-btn">🔄 Reset Game</button>
+
+<script src="app.js"></script>
+</body>
+</html>
